@@ -259,7 +259,7 @@ def convert(path, **kwargs):
                     if verbose: 
                         print(pitname, " .csv saved to:", outpath+"MCT_2D"+pitname+".csv" )
 
-                # if no output path given, make a folder inside data folder: 
+                # if no output path given, put to cwd
                 else: 
                     result.to_csv("MCT_2D"+pitname+".csv", index =False)
                     if verbose: 
